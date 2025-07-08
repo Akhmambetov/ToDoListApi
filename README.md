@@ -2,10 +2,10 @@
 API для управления задачами (todo list) на ASP.NET Core и PostgreSQL (EF Core)
 
 ## Запуск проекта
-1. Настройте строку подключения в `appsettings.json`
-2. Создайте базу данных `todo_db`
-3. Выполните миграции:
-   dotnet ef database update
+1. Настройте строку подключения в `appsettings.json` (Изменить имя пользователя и пароль под свои настройки)
+2. Создайте базу данных `todo_db` выполнив миграцию: `dotnet ef migrations add InitialCreate`
+3. Обновите базу данных:
+   `dotnet ef database update`
 4. Запустите проект:
    dotnet run
    
